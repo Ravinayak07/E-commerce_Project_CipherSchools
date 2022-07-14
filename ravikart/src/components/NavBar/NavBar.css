@@ -1,0 +1,79 @@
+.navbar_container {
+    background-color: #45e670;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid red;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.navbar_left {
+    display: flex;
+}
+
+.navbar_left>img {
+    height: 60px;
+}
+
+.navbar_left>a {
+    text-decoration: none;
+    font-size: 40px;
+
+}
+
+.navbar_right {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.navbar_search>input {
+    width: 350px;
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+.navbar_search>button {
+    width: 100px;
+    height: 28px;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    margin: 0 10px;
+
+}
+
+.navbar_search>button:hover {
+
+    background-color: rgb(239, 79, 79);
+}
+
+.navbar_right>p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 12px;
+    /*all p will keep this much padding so that when hovered, it doesnot break*/
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar_right>p:hover {
+    background-color: lightblue;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.navbar_right>button {
+    width: 100px;
+    height: 28px;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
