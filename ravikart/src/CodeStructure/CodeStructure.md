@@ -8,8 +8,8 @@
 
 ## CONTAINERS:
 - 1. HomePage : 
-       A) NavBar : logo, searchBar, Orders, Mycart, Signin
-       B) HomePage Content : Banner, Cards having Productcategories
+       A) NavBar : logo, searchBar, Orders, Mycart, Signin    //DONE
+       B) HomePageBody : Banner, Cards having Productcategories
 
 - 2. SignInPage:
        A) SignInBody : input and button
