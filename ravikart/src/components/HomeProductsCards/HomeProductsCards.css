@@ -19,12 +19,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #45e670;
+    background-color: #7292f3;
     height: 40vh;
     width: 300px;
     margin: 0px 12px;
     border-radius: 10px;
-    box-shadow: -8px 8px 8px 0 red;
+    box-shadow: -10px 10px 4px 0px orange;
 }
 .cards_box_container:hover{
    transform: scale(1.1);
@@ -40,5 +40,6 @@
 .cards_box_container > p{
     font-size: 20px;
     font-weight: 700;
-    color: black;
+    color: purple;
+    margin-top: 10px;
 }

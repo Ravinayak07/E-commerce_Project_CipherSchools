@@ -4,8 +4,6 @@
 3. The categories page (this will open and show all the products in a particular api when a particular category card is clicked) 
 4. You’ll need to host it on firebase and add your code on GitHub as well. 
 
-
-
 ## CONTAINERS:
 - 1. HomePage : 
        A) NavBar : logo, searchBar, Orders, Mycart, Signin    //DONE
@@ -18,3 +16,8 @@
 - 3. ProducPage:
        A) NavBar
        B) ProductPageContent
+
+
+## PENDING:
+
+- 1) Navbar search bar padding

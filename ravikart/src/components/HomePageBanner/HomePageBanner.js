@@ -6,8 +6,8 @@ function HomaPageBanner(){
     return(
         <div className="homepage_banner_container">
             <div className="homepage_banner_left">
-               <p>Welcome To</p>
-               <p>RaviKart</p>
+               <p>RaviKart's Season Sale</p>
+               <p>Minimum 50% OFF</p>
             </div>
             <div className="homepage_banner_right">
                 <img src={banner} />
