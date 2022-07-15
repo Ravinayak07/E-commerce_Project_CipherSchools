@@ -1,5 +1,5 @@
 .cards_section_container{
-     background-color: whitesmoke; 
+     background-color: whitesmoke;
     height: 90vh;
 }
 .cards_section_container_title{
@@ -9,6 +9,7 @@
 }
 .cards_container{
     display: flex;
+    justify-content: space-evenly;
     /* background-color: red; */
     height: 50vh;
     padding: 2% 4%;
@@ -18,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: greenyellow;
+    background-color: #45e670;
     height: 40vh;
     width: 300px;
     margin: 0px 12px;
@@ -28,9 +29,11 @@
 .cards_box_container:hover{
    transform: scale(1.1);
    transition: 0.5s;
+   cursor: pointer;
 
 }
 .cards_box_container > img{
+    height: 180px;
       border-radius: 4px;
       margin-top: 10%;
 }

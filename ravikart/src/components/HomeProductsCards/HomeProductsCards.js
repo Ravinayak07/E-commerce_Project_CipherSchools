@@ -1,9 +1,14 @@
 import React, {useState, useEffect} from "react";
 import "./HomeProductsCards.css";
 import electronics from "../../images/Categories/electronics.jpg"
+import jwellery from"../../images/Categories/jwellery.jpg";
+import mensclothings from"../../images/Categories/mensclothings.jpg";
+import womensclothings from"../../images/Categories/womensclothings.jpg";
+import { useNavigate } from "react-router-dom";
 
-function HomeProductsCards() {
+function HomeProductsCards({ProductCategoryName, setProductCategoryName}) {
 
+  
     // const [categoryName, setcategoryName] = useState([]);
 
     // useEffect(() =>{
@@ -17,45 +22,43 @@ function HomeProductsCards() {
      const categoryData = [
         {
             image: electronics,
-            title: "Electronics"
+            title: "electronics"
         },
         {
-            image: electronics,
-            title: "Jwellery"
+            image: jwellery,
+            title: "jewelery"
         },
         {
-            image: electronics,
-            title: "Men's Clothings"
+            image: mensclothings,
+            title: "men's clothing"
         },
         {
-            image: electronics,
-            title: "Women's clothings"
+            image: womensclothings,
+            title: "women's clothing"
         },
 
 
      ]
 
+     const navigate = useNavigate();
+     function goToProductPage(param) {
+       navigate(`/products/${param}`);
+       setProductCategoryName(param);
+     }
+
   return (
     <div className="cards_section_container">
-      <p className="cards_section_container_title">Products Categories</p>
+      {/* <p className="cards_section_container_title">Products Categories</p> */}
       <div className="cards_container">
       
         {categoryData.map((value,key) =>(
-           <div className="cards_box_container">
+           <div className="cards_box_container" onClick={()=>goToProductPage(value.title)}>
            <img src={value.image} />
            <p>{value.title}</p>
            </div>
 
           ) )}
-        {/* {categoryName.map((value,key) =>(
-           <div className="cards_box_container">
-            <p>{value}</p>
-            </div>
-
-        ) )} */}
-        
-        
-
+      
       </div>
     </div>
   );

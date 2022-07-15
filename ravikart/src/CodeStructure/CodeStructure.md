@@ -9,9 +9,12 @@
 ## CONTAINERS:
 - 1. HomePage : 
        A) NavBar : logo, searchBar, Orders, Mycart, Signin    //DONE
-       B) HomePageBody : Banner, Cards having Productcategories
+       B) HomePageBody : Banner, Category cards
 
 - 2. SignInPage:
-       A) SignInBody : input and button
+       A) NavBar
+       B) SigninBody
 
-- 3. ProductCategoriesPage
+- 3. ProducPage:
+       A) NavBar
+       B) ProductPageContent
