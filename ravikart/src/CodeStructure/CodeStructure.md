@@ -6,7 +6,7 @@
 
 ## CONTAINERS:
 - 1. HomePage : 
-       A) NavBar : logo, searchBar, Orders, Mycart, Signin    //DONE
+       A) NavBar : logo, searchBar, Orders, Mycart, Signin    
        B) HomePageBody : Banner, Category cards
 
 - 2. SignInPage:
@@ -18,6 +18,3 @@
        B) ProductPageContent
 
 
-## PENDING:
-
-- 1) Navbar search bar padding

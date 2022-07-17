@@ -1,8 +1,15 @@
 import React from "react";
 import "./NavBar.css";
 import logo from "../../images/logo.png";
+import Button from "../../Global/Button/Button";
+import { useNavigate } from "react-router-dom";
 
-function NavBar() {
+
+function NavBar({ ShowSignInButton }) {
+  const navigate = useNavigate();
+  function goToSignInPage() {
+    navigate("/sign-in");
+  }
   return (
     <div className="navbar_container">
       <div className="navbar_left">
@@ -18,10 +25,20 @@ function NavBar() {
 
         <p>Orders</p>
         <p>My cart</p>
-        <button>Sign In</button>
+        {ShowSignInButton === false ? (
+        " "
+      ) : (
+        <Button text="Sign In" onClicking={goToSignInPage} />
+      )}
       </div>
     </div>
   );
 }
 
 export default NavBar;
+
+
+
+
+
+ 
