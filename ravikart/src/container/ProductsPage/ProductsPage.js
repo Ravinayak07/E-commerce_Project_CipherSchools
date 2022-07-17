@@ -6,7 +6,7 @@ import ProductsPageBody from "../../components/ProductsPageBody/ProductsPageBody
 function ProductsPage({ProductCategoryName, setProductCategoryName}){
     return(
     <div>
-      <NavBar />
+      <NavBar ShowHomeButton={true} />
       <ProductsPageBody ProductCategoryName={ProductCategoryName} setProductCategoryName={setProductCategoryName} />
     </div>
     )

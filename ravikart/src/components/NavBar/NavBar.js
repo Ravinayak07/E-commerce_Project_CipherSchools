@@ -5,10 +5,19 @@ import Button from "../../Global/Button/Button";
 import { useNavigate } from "react-router-dom";
 
 
-function NavBar({ ShowSignInButton }) {
+function NavBar({ ShowSignInButton },{ ShowHomeButton } ) {
   const navigate = useNavigate();
   function goToSignInPage() {
     navigate("/sign-in");
+  }
+  function goToHomePage() {
+    navigate("/");
+  }
+  function goToOrdersPage() {
+    navigate("/orders");
+  }
+  function goToKartPage() {
+    navigate("/my-kart");
   }
   return (
     <div className="navbar_container">
@@ -20,11 +29,17 @@ function NavBar({ ShowSignInButton }) {
       <div className="navbar_right">
         <div className="navbar_search">
           <input placeholder="Search Here...." />
-          <button>search</button>
+          <Button text="search"/>
         </div>
+        {ShowHomeButton === false ? (
+        " "
+      ) : (
+        <p onClick={goToHomePage}>Home</p> 
+      )}
 
-        <p>Orders</p>
-        <p>My cart</p>
+
+        <p onClick={goToOrdersPage}>Orders</p>
+        <p onClick={goToKartPage}>My Kart</p>
         {ShowSignInButton === false ? (
         " "
       ) : (

@@ -6,7 +6,7 @@ import SignInBody from "../../components/SignInBody/SignInBody";
 function SignInPage() {
     return(
         <div>
-            <NavBar ShowSignInButton={false}/>
+            <NavBar ShowSignInButton={false} ShowHomeButton={true} />
             <SignInBody />
         </div>
     )
