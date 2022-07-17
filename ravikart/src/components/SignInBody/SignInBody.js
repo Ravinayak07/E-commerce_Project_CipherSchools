@@ -37,7 +37,7 @@ const [showSignInBox, setshowSignInBox] = useState(true)
           {/* <button>{SIGN_IN_BODY_TEXT.SIGN_IN}</button>
           <button>{SIGN_IN_BODY_TEXT.LOGIN_AS_GUEST_USER}</button> */}
           <p className="signin_box_text">
-          {SIGN_IN_BODY_TEXT.NEW_TO_MOVIE_APP}{" "} <span onClick={()=>setshowSignInBoxAs(false)}>{SIGN_IN_BODY_TEXT.SIGN_UP_NOW}</span>
+          {SIGN_IN_BODY_TEXT.NEW_TO_RAVIKART}{" "} <span onClick={()=>setshowSignInBoxAs(false)}>{SIGN_IN_BODY_TEXT.SIGN_UP_NOW}</span>
           </p>
         </div>
       </div>

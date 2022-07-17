@@ -1,5 +1,5 @@
 .signin_body_container{
-    background-color: #3ef49c;
+    background-color: #9eb4f3;
     height: 90vh; 
     display: flex;
     flex-direction: column;
@@ -12,14 +12,17 @@
 .signin_box_container{
      display: flex;
      flex-direction: column;
-     background-color: #0acb4e97;
+     background-color: #7292f3;
      padding: 50px 40px;
+     border-radius: 12px;
+     box-shadow: -8px 8px 8px 0px gray;
 }
 .signin_box_title{
     font-size: 28px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
+    color: purple;
 }
 
 .signin_box_container > input, .signin_box_container > button {
@@ -36,7 +39,7 @@
 
 .signin_box_container > button{
    height: 35px;
-   background-color: red;
+   background-color: orange;
    color: white;
    font-weight: 700;
    border: none;
@@ -48,7 +51,7 @@
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
-    color: black;
+    color: purple;
 }
 
 .signin_box_text > span {
@@ -59,7 +62,7 @@
 }
 
 .signup_body_container{
-    background-color: #3ef49c;
+    background-color: #9eb4f3;
     height: 90vh; 
     display: flex;
     flex-direction: column;
@@ -68,18 +71,22 @@
     /* justify-content: center, align-items: center and height: 90vh makes the signup body appear
     exactly at the center of the page */
   
+  
 }
 .signup_box_container{
      display: flex;
      flex-direction: column;
-     background-color: #95e90d97;
+     background-color: #7292f3;
      padding: 50px 40px;
+     border-radius: 8px;
+     box-shadow: -8px 8px 8px 0px gray;
 }
 .signup_box_title{
     font-size: 28px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
+    color: purple;
 }
 
 .signup_box_container > input, .signup_box_container > button {
@@ -100,7 +107,7 @@
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
-    color: black;
+    color: purple;
 }
 
 .signup_box_text > span {

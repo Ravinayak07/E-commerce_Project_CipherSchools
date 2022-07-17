@@ -6,7 +6,7 @@ function KartPageBody(){
     return(
         <div className="KartPageBody_container">
            <div className="KartPageBody_box">
-               <p className="KartPageBody_box_text">You have not added any orders in your Kart</p>
+               <p className="KartPageBody_box_text">You have not added any products in your Kart</p>
            </div>
         </div>
     )
